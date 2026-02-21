@@ -70,5 +70,10 @@ input {
 }
 
 #title a {
-    color: aquamarine;
+    color: rgb(76, 155, 129);
+    text-decoration: none;
+}
+
+#title a:hover {
+    color: rgb(13, 110, 78);
 }
