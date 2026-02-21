@@ -1,7 +1,10 @@
-const APILINK = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=fca15335de56ad69a2c42b58f3f153b7&page=1';
+const BASE_URL = 
+    (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+        ? "http://localhost:8000" 
+        : "https://review-app-ch3i.onrender.com"; 
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
-const SEARCHAPI = 'https://api.themoviedb.org/3/search/movie?&api_key=fca15335de56ad69a2c42b58f3f153b7&query=';
-
+const APILINK = `${BASE_URL}/api/v1/movies`; 
+const SEARCHAPI = `${BASE_URL}/api/v1/movies/search?q=`;
 
 const main = document.getElementById("section");
 const form = document.getElementById("form");

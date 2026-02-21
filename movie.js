@@ -1,5 +1,7 @@
 const CONFIG = {
-    API_URL: 'https://review-app-ch3i.onrender.com/api/v1/reviews'
+    API_URL: (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+        ? "http://localhost:8000/api/v1/reviews" 
+        : "https://review-app-ch3i.onrender.com/api/v1/reviews"
 };
 
 const url = new URL(location.href);
