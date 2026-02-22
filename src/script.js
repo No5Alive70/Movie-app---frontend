@@ -1,7 +1,4 @@
-const BASE_URL =
-    (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
-        ? "http://localhost:8000"
-        : "https://review-app-ch3i.onrender.com";
+const BASE_URL = import.meta.env.VITE_API_URL;
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 const APILINK = `${BASE_URL}/api/v1/movies`;
 const SEARCHAPI = `${BASE_URL}/api/v1/movies/search?q=`;
