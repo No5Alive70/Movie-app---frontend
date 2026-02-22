@@ -12,25 +12,43 @@ h3 {
     color: white;
 }
 
+.hidden {
+    display: none !important;
+}
+
+
 .topnav {
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: black;
     padding: 10px;
 }
 
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .topnav a {
-    float: left;
-    display: block;
-    color:  white;
-    text-align: center;
-    padding: 14px 16px;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 }
 
-.topnav .search-container{
-    float: right;
+.loading h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
 }
 
 form {
@@ -63,17 +81,26 @@ input {
 }
 
 .card {
-   border-radius: 20px;
-   padding: 15px;
-   text-align: center;
-   background-color: #151f30; 
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #151f30;
 }
 
-#title a {
+.card h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+#title-link {
     color: rgb(76, 155, 129);
     text-decoration: none;
 }
 
-#title a:hover {
+#title-link:hover {
     color: rgb(13, 110, 78);
 }
